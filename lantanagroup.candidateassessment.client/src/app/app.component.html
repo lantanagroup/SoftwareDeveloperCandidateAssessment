@@ -1,0 +1,26 @@
+<h1 id="tableLabel">Books</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+<p *ngIf="!books"><em>Loading... Please refresh once the ASP.NET backend has started. See <a href="https://aka.ms/jspsintegrationangular">https://aka.ms/jspsintegrationangular</a> for more details.</em></p>
+
+<div class="container">
+  <form #bookForm="ngForm" (ngSubmit)="submitForm(bookForm)">
+    <div class="form-group">
+      TODO: complete form
+    </div>
+  </form>
+</div>
+
+<table *ngIf="books">
+    <thead>
+        <tr>
+            TODO: Generate the table header based on the book object properties
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let book of books">
+            TODO: Generate the table row based on the book object properties. Incorporate a delete button for deletes and make table editable for updates.
+        </tr>
+    </tbody>
+</table>

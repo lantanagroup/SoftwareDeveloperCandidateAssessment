@@ -1,0 +1,6 @@
+@LantanaGroup.CandidateAssessment.Server_HostAddress = http://localhost:5188
+
+GET {{LantanaGroup.CandidateAssessment.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
