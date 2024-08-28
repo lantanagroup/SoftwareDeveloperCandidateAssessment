@@ -26,7 +26,7 @@ public class BookController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<ActionResult<Book>> AddBook([FromBody] Book book)
+    public async Task<ActionResult<Book>> CreateBook([FromBody] Book book)
     {
         throw new NotImplementedException();
     }

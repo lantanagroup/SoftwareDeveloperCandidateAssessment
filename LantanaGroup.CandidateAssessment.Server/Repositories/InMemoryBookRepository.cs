@@ -11,12 +11,7 @@ public class InMemoryBookRepository : IBookRepository
         { 4, new Book { Id = Guid.NewGuid(),  Title = "The Catcher in the Rye", Author = "J.D. Salinger", Genre = "Fiction", Year = 1951 } }
     };
 
-    public Book AddBook(Book book)
-    {
-        throw new NotImplementedException();
-    }
-
-    public void DeleteBook(Guid id)
+    public IEnumerable<Book> GetBooks()
     {
         throw new NotImplementedException();
     }
@@ -26,12 +21,17 @@ public class InMemoryBookRepository : IBookRepository
         throw new NotImplementedException();
     }
 
-    public IEnumerable<Book> GetBooks()
+    public Book CreateBook(Book book)
     {
         throw new NotImplementedException();
     }
 
     public Book UpdateBook(Guid id, Book book)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void DeleteBook(Guid id)
     {
         throw new NotImplementedException();
     }

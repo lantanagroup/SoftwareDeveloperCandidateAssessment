@@ -6,7 +6,7 @@ public interface IBookRepository
 {
     IEnumerable<Book> GetBooks();
     Book GetBook(Guid id);
-    Book AddBook(Book book);
+    Book CreateBook(Book book);
     Book UpdateBook(Guid id, Book book);
     void DeleteBook(Guid id);
 }
