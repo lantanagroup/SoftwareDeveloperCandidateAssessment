@@ -1,6 +1,4 @@
-﻿using LantanaGroup.CandidateAssessment.Server.Models;
-
-namespace LantanaGroup.CandidateAssessment.Server.Interfaces;
+﻿namespace LantanaGroup.CandidateAssessment.Server.Interfaces;
 
 public interface IBookRepository
 {
