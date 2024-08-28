@@ -14,31 +14,31 @@ public class BookController : ControllerBase
     }
 
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Book>>> GetBooks()
+    public ActionResult<IEnumerable<Book>> GetBooks()
     {
         throw new NotImplementedException();
     }
 
     [HttpGet("{id}")]
-    public async Task<ActionResult<Book>> GetBook(Guid id)
+    public ActionResult<Book> GetBook(Guid id)
     {
         throw new NotImplementedException();
     }
 
     [HttpPost]
-    public async Task<ActionResult<Book>> CreateBook([FromBody] Book book)
+    public ActionResult<Book> CreateBook([FromBody] Book book)
     {
         throw new NotImplementedException();
     }
 
     [HttpPut("{id}")]
-    public async Task<ActionResult<Book>> UpdateBook(Guid id, [FromBody] Book book)
+    public ActionResult<Book> UpdateBook(Guid id, [FromBody] Book book)
     {
         throw new NotImplementedException();
     }
 
     [HttpDelete("{id}")]
-    public async Task<IActionResult> DeleteBook(Guid id)
+    public IActionResult DeleteBook(Guid id)
     {
         throw new NotImplementedException();
     }
