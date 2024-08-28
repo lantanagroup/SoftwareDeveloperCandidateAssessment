@@ -7,7 +7,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddTransient<IBookDatabaseRepository, BookDatabaseRepository>();
+builder.Services.AddTransient<IBookRepository, InMemoryBookRepository>();
 
 var app = builder.Build();
 

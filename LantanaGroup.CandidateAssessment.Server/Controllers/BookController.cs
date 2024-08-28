@@ -6,11 +6,11 @@ namespace LantanaGroup.CandidateAssessment.Server.Controllers;
 [Route("books")]
 public class BookController : ControllerBase
 {
-    private readonly IBookDatabaseRepository _bookDatabaseRepository;
+    private readonly IBookRepository _bookRepository;
 
-    public BookController(IBookDatabaseRepository bookDatabaseRepository)
+    public BookController(IBookRepository bookRepository)
     {
-        _bookDatabaseRepository = bookDatabaseRepository;
+        _bookRepository = bookRepository;
     }
 
     /// <summary>
@@ -19,7 +19,7 @@ public class BookController : ControllerBase
     /// <returns></returns>
     /// <exception cref="NotImplementedException"></exception>
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<BookModel>>> GetBooks()
+    public async Task<ActionResult<IEnumerable<Book>>> GetBooks()
     {
         throw new NotImplementedException();
     }
@@ -31,7 +31,7 @@ public class BookController : ControllerBase
     /// <returns></returns>
     /// <exception cref="NotImplementedException"></exception>
     [HttpGet("{id}")]
-    public async Task<ActionResult<BookModel>> GetBook(Guid id)
+    public async Task<ActionResult<Book>> GetBook(Guid id)
     {
         throw new NotImplementedException();
     }
@@ -43,7 +43,7 @@ public class BookController : ControllerBase
     /// <returns></returns>
     /// <exception cref="NotImplementedException"></exception>
     [HttpPost]
-    public async Task<ActionResult<BookModel>> AddBook([FromBody] BookModel book)
+    public async Task<ActionResult<Book>> AddBook([FromBody] Book book)
     {
         throw new NotImplementedException();
     }
@@ -56,7 +56,7 @@ public class BookController : ControllerBase
     /// <returns></returns>
     /// <exception cref="NotImplementedException"></exception>
     [HttpPut("{id}")]
-    public async Task<ActionResult<BookModel>> UpdateBook(Guid id, [FromBody] BookModel book)
+    public async Task<ActionResult<Book>> UpdateBook(Guid id, [FromBody] Book book)
     {
         throw new NotImplementedException();
     }

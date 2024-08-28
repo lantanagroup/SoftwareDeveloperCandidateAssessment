@@ -8,7 +8,7 @@ This project consists of two modules:
 Your task is to implement missing functionality (stubbed out and marked by `NotImplementedException`s and/or `TODO`s):
 
   - In the Server module:
-      - Implement CRUD functionality in `BookDatabaseRepository`.
+      - Implement CRUD functionality in `InMemoryBookRepository`.
       - Implement REST endpoints in `BookController`.
       - In both cases, consider starting with the `GetBooks`/`GetBook` methods.
   - In the Client module:
